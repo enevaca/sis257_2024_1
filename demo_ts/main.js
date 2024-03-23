@@ -70,4 +70,26 @@ cualquiera = undefined;
 let noDefinido;
 // Object
 let objeto = { nombre: 'Juan', apellido: 'Pérez' };
-console.log(objeto);
+// Estructuras de control
+let contiene;
+if (materia.includes('Desarrollo'))
+    contiene = true;
+else if (materia.startsWith('Des'))
+    contiene = true;
+else
+    contiene = false;
+for (let i = 0; i < array.length; i++)
+    console.log('Ciclo for: ' + array[i]); // Opción 1
+for (let i in array)
+    console.log('For in: ' + i);
+for (let i of array)
+    console.log('For of: ' + i); // Opción 2
+array.forEach(i => console.log('forEach: ' + i)); // Opción 3
+;
+let juan = { cedulaIdentidad: '123', nombreCompleto: 'Juan Pérez', fechaNacimiento: new Date('2000-03-15') };
+// Funciones o métodos
+function saludar(nombre) {
+    // Comentarios
+    console.log(`Hola ${nombre}`);
+}
+saludar('Juan');
